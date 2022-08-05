@@ -71,14 +71,33 @@
    .about__container {
     grid-template-columns: 1fr;
     gap: 0;
-   }
+}
 
-   .about__me {
+.about__me {
     width: 50%;
     margin: 2rem auto 4rem;
-   }
+}
 
-   .about__content p {
+.about__content  {
+    margin: 1rem 0 1.5rem;
+    display: grid;
+grid-template-columns: auto;   }
+
+.about__cards {
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+}
+
+.about__card {
+    width:25%;
+    height: 80%;
+}
+
+
+
+.about__content p {
     margin: 1rem 0 1.5rem;
    }
 }

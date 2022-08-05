@@ -45,6 +45,8 @@ const Experience = () => {
         
         <div className="experience__backend">
                     <h3>Backend</h3>
+
+                  <div className="experience__content">
                       <article className='experience__details'>
               <BsCheck2All className='experience__details-icon'/>
               <div><h4>Node.js</h4>
@@ -57,7 +59,7 @@ const Experience = () => {
               <small className='text-light'>Familiar</small></div>
             </article>
 
-           
+           </div>
 
         </div>
 
