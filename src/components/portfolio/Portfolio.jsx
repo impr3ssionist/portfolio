@@ -7,6 +7,42 @@ import IMG4 from '../../assets/portfolio4.jpg'
 import IMG5 from '../../assets/portfolio5.png'
 import IMG6 from '../../assets/portfolio6.jpg'
 
+const data = [
+
+  {
+    id: 1,
+    image: IMG1,
+    title: "Craigslist Clone",
+    github: "https://github.com",
+    demo: "https://google.com"
+
+  },
+   {
+    id: 1,
+    image: IMG1,
+    title: "Wizard News",
+    github: "https://github.com",
+    demo: "https://google.com"
+
+  },
+   {
+    id: 1,
+    image: IMG1,
+    title: "Discount NFT Store",
+    github: "https://github.com",
+    demo: "https://google.com"
+
+  },
+   {
+    id: 1,
+    image: IMG1,
+    title: "Craigslist Clone",
+    github: "https://github.com",
+    demo: "https://google.com"
+
+  }
+]
+
 const Portfolio = () => {
   return (
     <section id='portfolio'>
@@ -16,78 +52,25 @@ const Portfolio = () => {
 
       <div className="container portfolio__container">
 
-        <article className="portfolio__item">
-          <div className="portfolio__item-image">
-            <img src={IMG1} alt="" />
-            <h3>This is a portfolio item title</h3>
-            <div className="portfolio__item-cta">
-              <a href='https://github.com/impr3ssionist' className='btn' target='_blank'>Github</a>
-              <a href='https://github.com/impr3ssionist' className='btn btn-primary' target='_blank'>Live Demo</a>
-            </div>
-          </div>
-        </article>
-          
+        {
+          data.map(({id, image, title, github, demo}) => {
 
-        <article className="portfolio__item">
+            return (
+              
+        <article key={id} className="portfolio__item">
           <div className="portfolio__item-image">
-            <img src={IMG1} alt="" />
-            <h3>This is a portfolio item title</h3>
+            <img src={image} alt={title} />
+            <h3>{title}</h3>
             <div className="portfolio__item-cta">
-              <a href='https://github.com/impr3ssionist' className='btn' target='_blank'>Github</a>
-              <a href='https://github.com/impr3ssionist' className='btn btn-primary' target='_blank'>Live Demo</a>
+              <a href={github} className='btn' target='_blank'>Github</a>
+              <a href={demo} className='btn btn-primary' target='_blank'>Live Demo</a>
             </div>
           </div>
         </article>
-          
 
-        <article className="portfolio__item">
-          <div className="portfolio__item-image">
-            <img src={IMG1} alt="" />
-            <h3>This is a portfolio item title</h3>
-            <div className="portfolio__item-cta">
-              <a href='https://github.com/impr3ssionist' className='btn' target='_blank'>Github</a>
-              <a href='https://github.com/impr3ssionist' className='btn btn-primary' target='_blank'>Live Demo</a>
-            </div>
-          </div>
-        </article>
-          
-
-        <article className="portfolio__item">
-          <div className="portfolio__item-image">
-            <img src={IMG1} alt="" />
-            <h3>This is a portfolio item title</h3>
-            <div className="portfolio__item-cta">
-              <a href='https://github.com/impr3ssionist' className='btn' target='_blank'>Github</a>
-              <a href='https://github.com/impr3ssionist' className='btn btn-primary' target='_blank'>Live Demo</a>
-            </div>
-          </div>
-        </article>
-          
-
-        <article className="portfolio__item">
-          <div className="portfolio__item-image">
-            <img src={IMG1} alt="" />
-            <h3>This is a portfolio item title</h3>
-            <div className="portfolio__item-cta">
-              <a href='https://github.com/impr3ssionist' className='btn' target='_blank'>Github</a>
-              <a href='https://github.com/impr3ssionist' className='btn btn-primary' target='_blank'>Live Demo</a>
-            </div>
-          </div>
-        </article>
-          
-
-        <article className="portfolio__item">
-          <div className="portfolio__item-image">
-            <img src={IMG1} alt="" />
-            <h3>This is a portfolio item title</h3>
-            <div className="portfolio__item-cta">
-              <a href='https://github.com/impr3ssionist' className='btn' target='_blank'>Github</a>
-              <a href='https://github.com/impr3ssionist' className='btn btn-primary' target='_blank'>Live Demo</a>
-            </div>
-          </div>
-        </article>
-          
-          
+            )
+          })
+        }
 
       </div>
     </section >
