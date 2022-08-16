@@ -1,5 +1,5 @@
 header {
-    height: 100vh;
+    height: 130vh;
     padding-top: 7rem;
     overflow: hidden;
 }
@@ -17,7 +17,7 @@ header {
     display: flex;
     gap: 1.2rem;
     justify-content: center;
-
+    
 }
 
 /* ============== Header Socials =================== */
@@ -32,6 +32,12 @@ header {
     bottom: 3rem;
 }
 
+.header__socials::before {
+    content: '';
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
+}
 .header__socials::after {
     content: '';
     width: 1px;

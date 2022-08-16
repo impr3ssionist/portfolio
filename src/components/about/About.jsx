@@ -44,7 +44,8 @@ const about = () => {
               solving problems for everyday consumers. Aside from web development, I enjoy spending 
               my time with my partner and friends, camping, and watching sports (Who Dat?!).
             </p>
-          <a href="'#Contact" className="btn btn-primary">Let's Talk</a>
+            <div className="about__button">
+          <a href="'#Contact" className="btn btn-primary">Let's Talk</a></div>
         </div>
       </div>
       
