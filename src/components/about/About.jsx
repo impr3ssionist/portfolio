@@ -21,7 +21,7 @@ const about = () => {
             <article className='about__card'>
               <FaAward className='about__icon'/>
               <h5>Experience</h5>
-              <small>FullStack Academy Graduate</small>
+              <a href='https://www.fullstackacademy.com/about' target='_blank' >FullStack Academy Graduate</a>
             </article>
 
             <article className='about__card'>
