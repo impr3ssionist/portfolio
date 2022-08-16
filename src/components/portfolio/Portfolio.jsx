@@ -13,34 +13,27 @@ const data = [
     id: 1,
     image: IMG1,
     title: "Craigslist Clone",
-    github: "https://github.com",
-    demo: "https://google.com"
+    github: "https://github.com/impr3ssionist/StrangersThings",
+    demo: "https://cocky-lewin-4971a7.netlify.app/"
 
   },
    {
     id: 1,
-    image: IMG1,
+    image: IMG2,
     title: "Wizard News",
-    github: "https://github.com",
-    demo: "https://google.com"
+    github: "https://github.com/impr3ssionist/WizardNews",
+    demo: "https://glacial-brook-34382.herokuapp.com/"
 
   },
    {
     id: 1,
-    image: IMG1,
+    image: IMG3,
     title: "Discount NFT Store",
-    github: "https://github.com",
-    demo: "https://google.com"
-
-  },
-   {
-    id: 1,
-    image: IMG1,
-    title: "Craigslist Clone",
-    github: "https://github.com",
-    demo: "https://google.com"
+    github: "https://github.com/impr3ssionist/GraceShopper",
+    demo: "https://mutineers1.herokuapp.com/"
 
   }
+  
 ]
 
 const Portfolio = () => {

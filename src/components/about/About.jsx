@@ -18,17 +18,17 @@ const about = () => {
         </div>
         <div className="about__content">
           <div className="about__cards">
-            <article className='about__card'>
+            <a href='https://www.fullstackacademy.com/about' target='_blank' className='about__card'>
               <FaAward className='about__icon'/>
               <h5>Experience</h5>
-              <a href='https://www.fullstackacademy.com/about' target='_blank' >FullStack Academy Graduate</a>
-            </article>
+              <small>FullStack Academy Graduate</small>
+            </a>
 
-            <article className='about__card'>
+            <a href='https://github.com/impr3ssionist?tab=repositories' target='_blank' className='about__card'>
               <AiFillFolderOpen className='about__icon'/>
               <h5>Projects</h5>
               <small>10+ Completed</small>
-            </article>
+            </a>
 
             
        

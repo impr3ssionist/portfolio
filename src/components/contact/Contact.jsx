@@ -39,14 +39,14 @@ const Contact = () => {
             <RiMessengerLine className='contact__option-icon'/>
             <h4>Messenger</h4>
             <h5>Caleb Ford</h5>
-            <a href="https://m.me/caleb.p.ford.1">Send a Message</a>
+            <a href="https://m.me/caleb.p.ford.1" target="_blank">Send a Message</a>
           </article>
-          <article className="contact__option">
+          {/* <article className="contact__option">
             <BsSlack className='contact__option-icon'/>
             <h4>Slack</h4>
             <h5>Send me a Slack message</h5>
             <a href="mailto:cpford13@gmail.com">Send an Email</a>
-          </article>
+          </article> */}
 
         </div>
         <form ref={form} onSubmit={sendEmail}>
