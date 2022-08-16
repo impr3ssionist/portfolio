@@ -2,6 +2,8 @@
     display: grid;
     grid-template-columns: 35% 50%;
     gap: 15%;
+    padding-left: 5rem;
+    padding-right: 5rem;
 
 }
 
@@ -27,9 +29,10 @@
 
 .about__cards {
     display:grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
     gap: 1.5rem;
-    }
+    
+}
 
 .about__card {
     background: var(--color-bg-variant);
@@ -37,7 +40,7 @@
     border-radius: 1rem;
     padding: 2rem;
     text-align: center;
-
+    
 }
 
 .about__card:hover {
@@ -48,16 +51,16 @@
 
 .about__icon { 
     color: var(--color-primary);
-    font-size: 1.4rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
 }
 
 .about__card h5 {
-    font-size: 0.95rem;
+    font-size: 1rem;
 }
 
 .about__card small {
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     color: var(--color-light);
 }
 
@@ -65,12 +68,33 @@
     margin: 2rem 0 2.6rem;
     color: var(--color-light)
 }
+
+
+.about__content p:nth-child(2) {
+    text-align: center;
+    padding-top: 2rem;
+    padding-right: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 0;
+    text-align: justify;
+    text-indent: 20px;
+}
+.about__content p:nth-child(3) {
+    text-align: center;
+    padding-top: 0;
+    padding-right: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 3rem;
+    text-align: justify;
+    text-indent: 20px;
+}
 /* ==================== Media Queries (Medium Devices) ========================*/
 
 @media screen and (max-width: 1024px){
    .about__container {
     grid-template-columns: 1fr;
     gap: 0;
+   
     
 }
 
@@ -102,6 +126,26 @@
 
 .about__content p {
     margin: 1rem 0 1.5rem;
+    
+}
+
+.about__content p:nth-child(2) {
+    text-align: center;
+    padding-top: 2rem;
+    padding-right: 1.5rem;
+    padding-bottom: 0;
+    padding-left: 1.5rem;
+    text-align: justify;
+    text-indent: 20px;
+}
+.about__content p:nth-child(3) {
+    text-align: center;
+    padding-top: 0;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    padding-bottom: 3rem;
+    text-align: justify;
+    text-indent: 20px;
 }
 
 
@@ -110,23 +154,46 @@
 /* ==================== Media Queries (Small Devices) ========================*/
 
 @media screen and (max-width: 600px){
-    .about__me {
-        width: 65%;
-        margin: 0 auto 3rem;
-    }
 
+    .about__container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .about__me {
+        width: 95%;
+        margin: 0 5rem 3rem;
+    }
+    
     .about__cards {
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
     }
-
-    .about__content {
-        text-align: center;
-    }
-
+    
+    
+    
     .about__content {
         margin: 1.5rem;
     }
-
+    
+    .about__content p:nth-child(2) {
+    text-align: center;
+    padding-top: 2rem;
+    padding-right: 1.5rem;
+    padding-bottom: 0;
+    padding-left: 1.5rem;
+    text-indent: 20px;
+}
+.about__content p:nth-child(3) {
+    text-align: center;
+    padding-top: 0;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    padding-bottom: 3rem;
+    text-indent: 20px;
+}
+    
 
 }

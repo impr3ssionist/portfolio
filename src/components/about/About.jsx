@@ -7,13 +7,13 @@ import {AiFillFolderOpen} from 'react-icons/ai'
 const about = () => {
   return (
     <section id='about'>
-      <h5>Get to Know</h5>
+      <h5>Get to Know Caleb</h5>
       <h2>About Me</h2>
 
       <div className='about__container'>
         <div className="about__me">
           <div className="about__me-image">
-            <img src={ME} alt="About Image!" />
+            <img src={ME} alt="About" />
           </div>
         </div>
         <div className="about__content">
@@ -33,8 +33,18 @@ const about = () => {
             
        
           </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod nulla, vitae porro libero nesciunt reiciendis non amet deserunt aut quasi reprehenderit eligendi magni minima explicabo hic laudantium quis ea est?</p>
-          <a href="'#contact" className="btn btn-primary">Let's Talk</a>
+          <p>   I’m a web developer and educator living in one of oldest neighborhoods 
+            in New Orleans. I spend my days building inspiring web applications, from 
+            back end programming (postgreSQL, express.js, and Python) to front end 
+            engineering (HTML, CSS, JavaScript, and React.js) with a focus on requirement analysis,
+             design, and usability.
+          </p>
+
+            <p>I’m passionate about web development and data analysis in all its forms, and 
+              solving problems for everyday consumers. Aside from web development, I enjoy spending 
+              my time with my partner and friends, camping, and watching sports (Who Dat?!).
+            </p>
+          <a href="'#Contact" className="btn btn-primary">Let's Talk</a>
         </div>
       </div>
       
