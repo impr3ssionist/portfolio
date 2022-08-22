@@ -13,7 +13,7 @@
     transition: var(--transition);
     text-align: center;
     
-
+    
 }
 
 .portfolio__item:hover {
@@ -31,9 +31,12 @@
 }
 
 .portfolio__item-cta {
+    margin-top: .5rem;
     display: flex;
     gap: 1rem;
     margin-bottom: 1rem;
+    flex-direction: row;
+    justify-content: center;
 
 }
 

@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
+   
 }
 
 .experience__container > div {
@@ -72,12 +73,20 @@ color: var(--color-primary)
 @media screen and (max-width: 600px){
   .experience__container {
     gap: 1rem;
+    display: flex;
+    flex-direction: column;
 
   }
 
   .experience__container > div {
     width: 100%;
     padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .experience__details {
+    display:grid;
+    grid-template-columns: 2, 2fr;
   }
 
 }

@@ -13,6 +13,7 @@
     border-radius: 2rem;
     background: linear-gradient(45deg, transparent, var(--color-primary), transparent);
     display: grid;
+    transform: scaleX(-1);
     place-items: center;
 }
 
@@ -20,7 +21,8 @@
     border-radius: 2rem;
     overflow: hidden;
     transform:rotate(10deg);
-    transition: var(--transition)
+    transition: var(--transition);
+    height: 500px;
 }
 
 .about__me-image:hover {
@@ -31,6 +33,8 @@
     display:grid;
     grid-template-columns: repeat(2,1fr);
     gap: 1.5rem;
+    height: 13rem;
+    
     
 }
 
@@ -40,6 +44,7 @@
     border-radius: 1rem;
     padding: 2rem;
     text-align: center;
+   
     
 }
 
@@ -105,41 +110,59 @@
 /* ==================== Media Queries (Medium Devices) ========================*/
 
 @media screen and (max-width: 1024px){
+
+    .about__me {
+     height: 27.4rem;
+     transform: scaleX(-1);
+    }
+
+    .about__me-image  {
+        border-radius: 2.rem;
+        height: fit-content;
+    }
+
+    
     .about__container {
         grid-template-columns: 1fr;
         gap: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         
-    
+        
     }
-
-.about__me {
+    
+    .about__me {
     width: 50%;
     margin: 2rem auto 4rem;
     
 }
 
-.about__content p {
-    margin: 1rem 0 1.5rem;
 
-
-}
     
 .about__cards {
     display:flex;
     flex-direction: row;
     align-items:center;
     justify-content: center;
+    
 }
 
 .about__card {
-    width:25%;
+    width:40%;
     height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
 }
 
 
 
 .about__content p {
-    margin: 1rem 0 1.5rem;
+    margin: 1rem 0 1rem;
+    width: 40rem;
     
 }
 
@@ -169,6 +192,22 @@
 
 @media screen and (max-width: 600px){
 
+    .about__me {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 2rem;
+    background: linear-gradient(45deg, transparent, var(--color-primary), transparent);
+    display: grid;
+    place-items: center;
+    height: 18.1rem;
+
+}
+
+    .about__me-image  {
+        border-radius: 2.rem;
+        height: fit-content;
+    }
+
     .about__container {
         width: 100%;
         display: flex;
@@ -181,15 +220,35 @@
         margin: 0 5rem 3rem;
     }
     
-    .about__cards {
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
-    }
+ .about__cards {
+    display:flex;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+    height: 18rem;
+    
+    
+}
+    
+    .about__card {
+        
+    width:8rem;
+    height: 80%;
+    
+}
+    
+   
+    .about__content p {
+    margin: 1rem 0 1rem;
+    width: 20rem;
+    
+}
+
     
     
     
     .about__content {
         margin: 1.5rem;
+        
     }
     
     .about__content p:nth-child(2) {

@@ -1,6 +1,6 @@
 import React from 'react'
 import './About.css'
-import ME from '../../assets/Circle_Headshot.png'
+import ME from '../../assets/caleb2.png'
 import {FaAward} from 'react-icons/fa'
 import {AiFillFolderOpen} from 'react-icons/ai'
 
