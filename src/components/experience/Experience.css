@@ -1,56 +1,48 @@
 .experience__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-   
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
 }
 
 .experience__container > div {
-    background-color: var(--color-bg-variant);
-    padding: 2.4 rem 5rem;
-    border-radius: 2rem;
-    border: 1px solid transparent;
-    
+  background-color: var(--color-bg-variant);
+  padding: 2.4 rem 5rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
 }
 
 .experience__container > div:hover {
- background: transparent;
- border-color: var(--color-primary-variant);
-
-
+  background: transparent;
+  border-color: var(--color-primary-variant);
 }
 
 .experience__container > div h3 {
-
-text-align: center;
-margin-bottom: 2rem;
-color: var(--color-primary)
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--color-primary);
 }
 
 .experience__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 2rem;
+  padding: 1rem;
+}
 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 2rem;
-    padding: 1rem;
-    
-  }
-  
-  .experience__details {
-  
-    display: flex;
-    align-items: center;
-    gap: 3rem;
+.experience__details {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
 }
 
 .experience__details-icon {
-    margin-top: 6px;
-    color: var(--color-primary);
+  margin-top: 6px;
+  color: var(--color-primary);
 }
 
 /* ==================== Media Queries (Medium Devices) ========================*/
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px) {
   .experience__container {
     grid-template-columns: 1fr;
   }
@@ -64,18 +56,15 @@ color: var(--color-primary)
   .experience__content {
     padding: 1rem;
   }
-
-
 }
 
 /* ==================== Media Queries (Small Devices) ========================*/
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
   .experience__container {
     gap: 1rem;
     display: flex;
     flex-direction: column;
-
   }
 
   .experience__container > div {
@@ -85,8 +74,7 @@ color: var(--color-primary)
   }
 
   .experience__details {
-    display:grid;
+    display: grid;
     grid-template-columns: 2, 2fr;
   }
-
 }
