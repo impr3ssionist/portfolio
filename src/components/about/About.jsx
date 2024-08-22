@@ -21,6 +21,7 @@ const about = () => {
             <a
               href="https://www.fullstackacademy.com/about"
               target="_blank"
+              rel="noopener noreferrer"
               className="about__card"
             >
               <FaAward className="about__icon" />
@@ -32,6 +33,7 @@ const about = () => {
             <a
               href="https://github.com/impr3ssionist?tab=repositories"
               target="_blank"
+              rel="noopener noreferrer"
               className="about__card"
             >
               <AiFillFolderOpen className="about__icon" />
