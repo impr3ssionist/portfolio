@@ -4,7 +4,7 @@ import emailjs from "emailjs-com";
 import "./Contact.css";
 import { AiOutlineMail } from "react-icons/ai";
 import { RiMessengerLine } from "react-icons/ri";
-import { BsSlack } from "react-icons/bs";
+// import { BsSlack } from "react-icons/bs";
 
 const Contact = () => {
   const form = useRef();

@@ -13,7 +13,7 @@ const about = () => {
       <div className="about__container">
         <div className="about__me">
           <div className="about__me-image">
-            <img src={ME} alt="About" />
+            <img src={ME} loading="lazy" alt="About" />
           </div>
         </div>
         <div className="about__content">
@@ -27,6 +27,7 @@ const about = () => {
               <FaAward className="about__icon" />
               <h5>Experience</h5>
               <small>FullStack Academy Graduate</small>
+              <small>-</small>
               <small>NOAA Agile Team member</small>
             </a>
 
@@ -61,7 +62,7 @@ const about = () => {
             games.
           </p>
           <div className="about__button">
-            <a href="'#Contact" className="btn btn-primary">
+            <a href="#Contact" className="btn btn-primary">
               Let's Talk
             </a>
           </div>
