@@ -5,7 +5,7 @@
 .about__container {
   display: grid;
   grid-template-columns: 35% 65%;
-  gap: 8%;
+  gap: 15%;
   padding-left: 5rem;
   padding-right: 5rem;
 }
@@ -32,6 +32,9 @@
   transform: rotate(10deg);
   transition: var(--transition);
   height: 500px;
+}
+.about__me-image img {
+  height: auto;
 }
 
 .about__me-image:hover {
@@ -132,6 +135,10 @@
     height: fit-content;
   }
 
+  .about__me-image img {
+    height: auto;
+  }
+
   .about__container {
     grid-template-columns: 1fr;
     gap: 0;
@@ -208,9 +215,8 @@
     margin-top: 0vh;
   }
 
-  .about__me-image {
-    border-radius: 2rem;
-    height: fit-content;
+  .about__me-image img {
+    height: auto;
   }
 
   .about__container {
