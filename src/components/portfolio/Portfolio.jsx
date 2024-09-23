@@ -13,22 +13,6 @@ const data = [
     demoAvailable: true,
     demo: "https://cocky-lewin-4971a7.netlify.app/",
   },
-  {
-    id: 1,
-    image: IMG2,
-    title: "Wizard News",
-    github: "https://github.com/impr3ssionist/WizardNews",
-    demoAvailable: false,
-    demo: "https://glacial-brook-34382.herokuapp.com/",
-  },
-  {
-    id: 1,
-    image: IMG3,
-    title: "Discount NFT Store",
-    github: "https://github.com/impr3ssionist/GraceShopper",
-    demoAvailable: false,
-    demo: "https://mutineers1.herokuapp.com/",
-  },
 ];
 
 const Portfolio = () => {

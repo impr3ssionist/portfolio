@@ -5,7 +5,7 @@
 .about__container {
   display: grid;
   grid-template-columns: 35% 65%;
-  gap: 15%;
+  gap: 8%;
   padding-left: 5rem;
   padding-right: 5rem;
 }
