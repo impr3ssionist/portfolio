@@ -4,10 +4,11 @@
 
 .about__container {
   display: grid;
-  grid-template-columns: 35% 65%;
+  grid-template-columns: 40% 40%;
   gap: 15%;
   padding-left: 5rem;
   padding-right: 5rem;
+  outline: solid red 1px;
 }
 
 .about__me {
