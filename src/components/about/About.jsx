@@ -76,18 +76,6 @@ const about = () => {
               Let's Talk
             </a>
           </div>
-          <p>
-            I’m passionate about web development and data analysis in all its
-            forms, and solving problems for everyday living. Aside from web
-            development, I enjoy spending my time with my partner and friends,
-            climbing mountains, and watching the Seattle Mariners win baseball
-            games.
-          </p>
-          <div className="about__button">
-            <a href="#Contact" className="btn btn-primary">
-              Let's Talk
-            </a>
-          </div>
         </div>
       </div>
     </section>
