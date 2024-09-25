@@ -1,132 +1,120 @@
 header {
-    height: 130vh;
-    padding-top: 7rem;
-    overflow: hidden;
+  height: 125vh;
+  padding-top: 7rem;
+  overflow: hidden;
+  margin-bottom: 0vh;
 }
 
 .header__container {
-    text-align: center;
-    height: 100%;
-    position:relative;
-    
+  text-align: center;
+  height: 100%;
+  position: relative;
 }
 
 /* ============== CTA =================== */
 
 .cta {
-    margin-top: 2.5rem;
-    display: flex;
-    gap: 1.2rem;
-    justify-content: center;
-    
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
 }
 
 /* ============== Header Socials =================== */
 
 .header__socials {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.8rem;
-    position:absolute;
-    left: 0;
-    bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  position: absolute;
+  left: 0;
+  bottom: 33rem;
 }
 
 .header__socials::before {
-    content: '';
-    width: 1px;
-    height: 2rem;
-    background: var(--color-primary);
+  content: "";
+  width: 1px;
+  height: 2rem;
+  background: var(--color-primary);
 }
 .header__socials::after {
-    content: '';
-    width: 1px;
-    height: 2rem;
-    background: var(--color-primary);
+  content: "";
+  width: 1px;
+  height: 2rem;
+  background: var(--color-primary);
 }
 
 /* ============== ME =================== */
 
 .me {
-    background: linear-gradient(var(--color-primary), transparent);
-    width: 30rem;
-    height: 40rem;
-    position: absolute;
-    left: calc(50% - 15rem);
-        margin-top: 4rem;
-    border-radius: 15rem 15rem 0 0;
-    overflow:visible;
-    padding: 5rem 1.5rem 1.5rem 1.5rem;
-    
+  background: linear-gradient(var(--color-primary), transparent);
+  width: 30rem;
+  height: 40rem;
+  position: absolute;
+  left: calc(50% - 15rem);
+  margin-top: 4rem;
+  border-radius: 15rem 15rem 5rem 5rem;
+  overflow: visible;
+  padding: 5rem 1.5rem 1.5rem 1.5rem;
 }
 
 .me img {
-    border-radius: 50px;
-    background: linear-gradient(blue);
-    margin-top: -6rem;
-    margin-left: -3.5rem;
-    width: 30rem;
-    top: calc(80% - 10rem);
+  border-radius: 50px;
+  background: linear-gradient(blue);
+  margin-top: -6rem;
+  margin-left: -3.5rem;
+  width: 30rem;
+  top: calc(80% - 10rem);
+  -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
 }
 
 /* ============== Scroll Down =================== */
 
 .scroll__down {
-    position: absolute;
-    right: -2.3rem;
-    bottom: 8.6rem;
-    transform: rotate(90deg);
-    font-size: 0.9rem;
+  position: absolute;
+  right: -2.3rem;
+  transform: rotate(90deg);
+  font-size: 0.9rem;
+  bottom: 39.5rem;
 }
 
 /* ==================== Media Queries (Medium Devices) ========================*/
 
-@media screen and (max-width: 1024px){
-   header{
-    height: 68vh;
-       }
+@media screen and (max-width: 1024px) {
+  header {
+    height: fit-content;
+    margin-bottom: 8vh;
+  }
 
-    .me {
-    background: linear-gradient(var(--color-primary), transparent);
-    width: 20rem;
-    height: 25rem;
-    position: absolute;
-    left: calc(50% - 10rem);
-    top: calc(50% - 12rem);
-    margin-top: 4rem;
-    border-radius: 15rem 15rem 0 0;
-    overflow: hidden;
-    padding: 5rem 1.5rem 1.5rem 1.5rem;
-       
-}
+  .header__container {
+    text-align: center;
+    height: 50%;
+    position: relative;
+  }
 
-.me img {
+  .me img {
     border-radius: 50px;
     background: linear-gradient(blue);
-    
-    margin-top: -7rem;
-    margin-left: -9rem;
+
+    margin-top: -5rem;
+    margin-left: calc(50%-5rem);
     width: 30rem;
     top: calc(80% - 10rem);
-    
-}
-
-
-
-
+  }
 }
 
 /* ==================== Media Queries (Small Devices) ========================*/
 
-@media screen and (max-width: 600px){
-   header{
-    height: 100vh;
-   } 
+@media screen and (max-width: 600px) {
+  header {
+    height: fit-content;
+    margin-bottom: 8vh;
+  }
 
-   .header__socials, .scroll__down {
+  .header__socials,
+  .scroll__down {
     display: none;
-   }
-
-   
+  }
 }
