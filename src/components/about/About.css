@@ -8,10 +8,11 @@
   gap: 15%;
   padding-left: 5rem;
   padding-right: 5rem;
-  outline: solid red 1px;
 }
 
 .about__me {
+  margin-top: 9vh;
+  outline: solid red 1px;
   width: 100%;
   aspect-ratio: 1/1;
   border-radius: 2rem;
