@@ -4,7 +4,7 @@
 
 .about__container {
   display: grid;
-  grid-template-columns: 40% 40%;
+  grid-template-columns: 45% 40%;
   gap: 15%;
   padding-left: 5rem;
   padding-right: 5rem;
@@ -12,8 +12,7 @@
 
 .about__me {
   margin-top: 9vh;
-  outline: solid red 1px;
-  width: 100%;
+  width: 33vw;
   aspect-ratio: 1/1;
   border-radius: 2rem;
   background: linear-gradient(
@@ -33,10 +32,13 @@
   overflow: hidden;
   transform: rotate(10deg);
   transition: var(--transition);
-  height: 500px;
+  height: 52vh;
+  width: 33vw;
 }
 .about__me-image img {
   height: auto;
+  height: 91vh;
+  width: 37vw;
 }
 
 .about__me-image:hover {
@@ -80,6 +82,7 @@
 }
 
 .about__content {
+  outline: solid red 1px;
   margin: 2rem 0 2.6rem;
   color: var(--color-light);
   align-items: center;
