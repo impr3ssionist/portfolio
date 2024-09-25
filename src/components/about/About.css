@@ -1,6 +1,10 @@
+#about {
+  margin-top: 0vh;
+}
+
 .about__container {
   display: grid;
-  grid-template-columns: 35% 50%;
+  grid-template-columns: 35% 65%;
   gap: 15%;
   padding-left: 5rem;
   padding-right: 5rem;
@@ -28,6 +32,9 @@
   transform: rotate(10deg);
   transition: var(--transition);
   height: 500px;
+}
+.about__me-image img {
+  height: auto;
 }
 
 .about__me-image:hover {
@@ -109,6 +116,10 @@
 /* ==================== Media Queries (Medium Devices) ========================*/
 
 @media screen and (max-width: 1024px) {
+  #about {
+    margin-top: 0vh;
+  }
+
   .about__me {
     height: 27.4rem;
     transform: scaleX(-1);
@@ -122,6 +133,10 @@
   .about__me-image {
     border-radius: 2rem;
     height: fit-content;
+  }
+
+  .about__me-image img {
+    height: auto;
   }
 
   .about__container {
@@ -138,15 +153,16 @@
   }
 
   .about__cards {
-    display: flex;
+    display: grid;
     flex-direction: row;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
+    margin-top: 1rem;
   }
 
   .about__card {
-    width: 40%;
-    height: 80%;
+    width: auto;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -195,9 +211,12 @@
     height: 18.1rem;
   }
 
-  .about__me-image {
-    border-radius: 2rem;
-    height: fit-content;
+  #about {
+    margin-top: 0vh;
+  }
+
+  .about__me-image img {
+    height: auto;
   }
 
   .about__container {
@@ -212,15 +231,16 @@
   }
 
   .about__cards {
-    display: flex;
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
     height: 18rem;
+    align-items: stretch;
   }
 
   .about__card {
     width: 8rem;
-    height: 80%;
+    height: auto;
   }
 
   .about__content p {

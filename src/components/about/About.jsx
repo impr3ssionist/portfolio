@@ -13,7 +13,7 @@ const about = () => {
       <div className="about__container">
         <div className="about__me">
           <div className="about__me-image">
-            <img src={ME} alt="About" />
+            <img src={ME} loading="lazy" alt="About" />
           </div>
         </div>
         <div className="about__content">
@@ -27,6 +27,17 @@ const about = () => {
               <FaAward className="about__icon" />
               <h5>Experience</h5>
               <small>FullStack Academy Graduate</small>
+              <small>NOAA Agile Team member</small>
+            </a>
+
+            <a
+              href="https://github.com/impr3ssionist?tab=repositories"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="about__card"
+            >
+              <AiFillFolderOpen className="about__icon" />
+              <small>-</small>
               <small>NOAA Agile Team member</small>
             </a>
 
@@ -62,6 +73,18 @@ const about = () => {
           </p>
           <div className="about__button">
             <a href="'#Contact" className="btn btn-primary">
+              Let's Talk
+            </a>
+          </div>
+          <p>
+            I’m passionate about web development and data analysis in all its
+            forms, and solving problems for everyday living. Aside from web
+            development, I enjoy spending my time with my partner and friends,
+            climbing mountains, and watching the Seattle Mariners win baseball
+            games.
+          </p>
+          <div className="about__button">
+            <a href="#Contact" className="btn btn-primary">
               Let's Talk
             </a>
           </div>
