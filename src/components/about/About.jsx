@@ -42,29 +42,32 @@ const about = () => {
               <small>10+ Completed</small>
             </a>
           </div>
-          <p>
-            {" "}
-            I'm a software developer and educator living at 9200 feet in the
-            Colorado Rockies. I spend my days solving problems and building web
-            applications, from back-end programming (PostgreSQL, Express.js,
-            Python) to front-end engineering (HTML, CSS, JavaScript, React.js).
-            My focus is on requirement analysis, design, and usability.
-            Recently, I earned my AWS Cloud Practitioner Certification and have
-            been diving into Infrastructure as Code (IaC), serverless
-            technologies, and solutions architecting.
-          </p>
+          <div id="about_me_paragraphs">
+            <p>
+              {" "}
+              I'm a software developer and educator living at 9200 feet in the
+              Colorado Rockies. I spend my days solving problems and building
+              web applications, from back-end programming (PostgreSQL,
+              Express.js, Python) to front-end engineering (HTML, CSS,
+              JavaScript, React.js). My focus is on requirement analysis,
+              design, and usability. Recently, I earned my AWS Cloud
+              Practitioner Certification and have been diving into
+              Infrastructure as Code (IaC), serverless technologies, and
+              solutions architecting.
+            </p>
 
-          <p>
-            I’m passionate about web development and data analysis in all its
-            forms, and solving problems for everyday living. Aside from web
-            development, I enjoy spending my time with my partner and friends,
-            climbing mountains, and watching the Seattle Mariners win baseball
-            games.
-          </p>
-          <div className="about__button">
-            <a href="#Contact" className="btn btn-primary">
-              Let's Talk
-            </a>
+            <p>
+              I’m passionate about web development and data analysis in all its
+              forms, and solving problems for everyday living. Aside from web
+              development, I enjoy spending my time with my partner and friends,
+              climbing mountains, and watching the Seattle Mariners win baseball
+              games.
+            </p>
+            <div className="about__button">
+              <a href="'#Contact" className="btn btn-primary">
+                Let's Talk
+              </a>
+            </div>
           </div>
         </div>
       </div>
