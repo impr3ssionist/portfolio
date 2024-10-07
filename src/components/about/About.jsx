@@ -65,7 +65,7 @@ const about = () => {
             </p>
             <div className="about__button">
               <a href="'#Contact" className="btn btn-primary">
-                Let's Talk
+                <p className="lets_talk">Let's Talk</p>
               </a>
             </div>
           </div>
