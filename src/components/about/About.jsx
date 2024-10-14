@@ -1,4 +1,3 @@
-import React from "react";
 import "./About.css";
 import ME from "../../assets/caleb2.png";
 import { FaAward } from "react-icons/fa";
