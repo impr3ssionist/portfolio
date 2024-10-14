@@ -2,8 +2,7 @@ import { useState } from "react";
 import "./Nav.css";
 import { FaHome } from "react-icons/fa";
 import { SiAboutdotme } from "react-icons/si";
-import { BiBookReader } from "react-icons/bi";
-import { BiMessageAltDetail } from "react-icons/bi";
+import { BiBookReader, BiMessageAltDetail } from "react-icons/bi";
 
 const Nav = () => {
   const [activeNav, setActiveNav] = useState("#");
@@ -31,7 +30,7 @@ const Nav = () => {
         <BiBookReader />
       </a>
       <a
-        href="#Contact"
+        href="#contact"
         onClick={() => setActiveNav("#contact")}
         className={activeNav === "#contact" ? "active" : ""}
       >
