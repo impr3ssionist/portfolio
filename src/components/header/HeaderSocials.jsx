@@ -1,7 +1,4 @@
-import React from "react";
-import { BsLinkedin } from "react-icons/bs";
-import { BsGithub } from "react-icons/bs";
-import { BsFacebook } from "react-icons/bs";
+import { BsLinkedin, BsGithub, BsFacebook } from "react-icons/bs";
 
 const HeaderSocials = () => {
   return (
@@ -10,6 +7,7 @@ const HeaderSocials = () => {
         href="https://www.linkedin.com/in/caleb-ford13/"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="Visit LinkedIn profile"
       >
         <BsLinkedin />
       </a>
@@ -17,6 +15,7 @@ const HeaderSocials = () => {
         href="https://github.com/impr3ssionist"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="Visit Github profile"
       >
         <BsGithub />
       </a>
@@ -24,6 +23,7 @@ const HeaderSocials = () => {
         href="https://www.facebook.com/caleb.p.ford.1"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="Visit Facebook profile"
       >
         <BsFacebook />
       </a>

@@ -1,4 +1,3 @@
-import React from "react";
 import "./Experience.css";
 import { BsCheck2All } from "react-icons/bs";
 
