@@ -4,7 +4,7 @@ import ME from "../../assets/caleb2.png";
 import { FaAward } from "react-icons/fa";
 import { AiFillFolderOpen } from "react-icons/ai";
 
-const about = () => {
+const About = () => {
   return (
     <section id="about">
       <h5>Get to Know Caleb</h5>
@@ -75,4 +75,4 @@ const about = () => {
   );
 };
 
-export default about;
+export default About;

@@ -4,7 +4,7 @@ import { BsFacebook } from "react-icons/bs";
 import { BsLinkedin } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 
-const footer = () => {
+const Footer = () => {
   return (
     <footer>
       <a href="#" className="footer__logo">
@@ -46,4 +46,4 @@ const footer = () => {
   );
 };
 
-export default footer;
+export default Footer;
