@@ -2,8 +2,25 @@ import { useRef } from "react";
 import emailjs from "emailjs-com";
 
 import "./Contact.css";
-import { AiOutlineMail } from "react-icons/ai";
-import { RiMessengerLine } from "react-icons/ri";
+import contactData from "./contactConfig";
+
+const ContactCard = ({ contactMethod }) => {
+  const Icon = contactMethod.icon;
+  return (
+    <article className="contact__option">
+      <Icon className="contact__option-icon" />
+      <h4>{contactMethod.name}</h4>
+      <h5>{contactMethod.subTitle}</h5>
+      <a
+        href={contactMethod.href}
+        target={contactMethod.target}
+        rel={contactMethod.rel}
+      >
+        {contactMethod.linkText}
+      </a>
+    </article>
+  );
+};
 
 const Contact = () => {
   const form = useRef();
@@ -13,10 +30,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_ov4urre",
-        "template_vq4fn7g",
+        contactData.serviceCredentials.serviceID,
+        contactData.serviceCredentials.templateID,
         form.current,
-        "Pv0AsNOnARuq1VUme"
+        contactData.serviceCredentials.userID
       )
       .then(
         (result) => {
@@ -34,41 +51,13 @@ const Contact = () => {
     <section id="Contact">
       <h5>Get In Touch</h5>
       <h2>Contact Me</h2>
-
       <div className="container contact__container">
         <div className="contact__options">
-          <article className="contact__option">
-            <AiOutlineMail className="contact__option-icon" />
-            <h4>Email</h4>
-            <h5>caleb.p.ford@gmail.com</h5>
-            <a
-              href="mailto:caleb.p.ford@gmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Send an Email
-            </a>
-          </article>
-          <article className="contact__option">
-            <RiMessengerLine className="contact__option-icon" />
-            <h4>Messenger</h4>
-            <h5>Caleb Ford</h5>
-            <a
-              href="https://m.me/caleb.p.ford.1"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Send a Message
-            </a>
-          </article>
-          {/* <article className="contact__option">
-            <BsSlack className='contact__option-icon'/>
-            <h4>Slack</h4>
-            <h5>Send me a Slack message</h5>
-            <a href="mailto:cpford13@gmail.com">Send an Email</a>
-          </article> */}
+          {contactData.contactMethods.map((contactMethod) => (
+            <ContactCard key={contactMethod.id} contactMethod={contactMethod} />
+          ))}
         </div>
-        <form ref={form} onSubmit={sendEmail}>
+        <form className="email__form" ref={form} onSubmit={sendEmail}>
           <input
             type="text"
             name="name"
