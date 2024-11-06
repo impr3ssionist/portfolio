@@ -15,7 +15,7 @@ const aboutData = {
       href: "https://www.fullstackacademy.com/about",
       icon: FaAward,
       title: "Experience",
-      details: ["Fullstack Academy Graduate", "-", "NOAA Agile Team member"],
+      details: ["Fullstack Academy Graduate", "NOAA Agile Team member"],
     },
     {
       id: 2,
@@ -39,7 +39,9 @@ const AboutCard = ({ card }) => {
       <Icon classname="about__icon" />
       <h5>{card.title}</h5>
       {card.details.map((detail, index) => (
-        <small key={index}>{detail}</small>
+        <small key={index} className="card__detail">
+          {detail}
+        </small>
       ))}
     </a>
   );
@@ -72,7 +74,7 @@ const About = () => {
 
             <div className="about__button">
               <a href="#Contact" className="btn btn-primary">
-                Let's Talk!
+                <p>Let's Talk!</p>
               </a>
             </div>
           </div>
