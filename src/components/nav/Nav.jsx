@@ -1,41 +1,21 @@
 import { useState } from "react";
 import "./Nav.css";
-import { FaHome } from "react-icons/fa";
-import { SiAboutdotme } from "react-icons/si";
-import { BiBookReader, BiMessageAltDetail } from "react-icons/bi";
+import navData from "./navData";
 
 const Nav = () => {
   const [activeNav, setActiveNav] = useState("#");
   return (
     <nav>
-      <a
-        href="#"
-        onClick={() => setActiveNav("#")}
-        className={activeNav === "#" ? "active" : ""}
-      >
-        <FaHome />
-      </a>
-      <a
-        href="#about"
-        onClick={() => setActiveNav("#about")}
-        className={activeNav === "#about" ? "active" : ""}
-      >
-        <SiAboutdotme />
-      </a>
-      <a
-        href="#experience"
-        onClick={() => setActiveNav("#experience")}
-        className={activeNav === "#experience" ? "active" : ""}
-      >
-        <BiBookReader />
-      </a>
-      <a
-        href="#contact"
-        onClick={() => setActiveNav("#contact")}
-        className={activeNav === "#contact" ? "active" : ""}
-      >
-        <BiMessageAltDetail />
-      </a>
+      {navData.navLinks.map((link) => (
+        <a
+          key={link.id}
+          href={link.href}
+          onClick={() => setActiveNav(link.href)}
+          className={activeNav === link.href ? "active" : ""}
+        >
+          <link.icon />
+        </a>
+      ))}
     </nav>
   );
 };

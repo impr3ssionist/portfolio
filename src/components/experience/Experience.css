@@ -16,36 +16,29 @@
   border-color: var(--color-primary-variant);
 }
 
-.experience__container > div h3 {
-  text-align: center;
-  margin-bottom: 2rem;
+.experience__details-icon {
+  margin-top: 6px;
   color: var(--color-primary);
 }
 
-.experience__content {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  row-gap: 2rem;
-  padding-bottom: 2rem;
-}
-
-.experience__details {
-  display: grid;
-  grid-template-columns: 2, 2fr;
-  justify-items: stretch;
-  height: auto;
-  width: auto;
-}
-
-.experience__details div {
+.experience_details {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.experience__details-icon {
-  margin-top: 6px;
-  color: var(--color-primary);
+.experience__frontend {
+  width: 98%;
+  height: 98%;
+}
+.experience__frontend h3 {
+  text-align: center;
+}
+
+.experience__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 2%;
 }
 
 /* ==================== Media Queries (Medium Devices) ========================*/
