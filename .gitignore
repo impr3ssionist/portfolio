@@ -23,6 +23,5 @@ yarn-debug.log*
 yarn-error.log*
 
 # User data
-/src/components/contact/contactConfig.js
 /src/components/services
 /src/components/testimonials
