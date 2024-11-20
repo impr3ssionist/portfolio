@@ -2,6 +2,7 @@ import "./About.css";
 import ME from "../../assets/caleb2.png";
 import { FaAward } from "react-icons/fa";
 import { AiFillFolderOpen } from "react-icons/ai";
+import { memo } from "react";
 
 const aboutData = {
   description: [
@@ -27,16 +28,16 @@ const aboutData = {
   ],
 };
 
-const AboutCard = ({ card }) => {
+const AboutCard = memo(({ card }) => {
   const Icon = card.icon;
   return (
     <a
       href={card.href}
       target="_blank"
-      rel="noopener noreferror"
+      rel="noopener noreferrer"
       className="about__card"
     >
-      <Icon classname="about__icon" />
+      <Icon className="about__icon" />
       <h5>{card.title}</h5>
       {card.details.map((detail, index) => (
         <small key={index} className="card__detail">
@@ -45,7 +46,7 @@ const AboutCard = ({ card }) => {
       ))}
     </a>
   );
-};
+});
 
 const About = () => {
   return (
