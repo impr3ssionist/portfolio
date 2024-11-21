@@ -1,7 +1,8 @@
 import "./Experience.css";
 import experienceData from "./experienceData";
+import { memo } from "react";
 
-const TechCheckMark = ({ icon: Icon, technology, proficiency }) => {
+const TechCheckMark = memo(({ icon: Icon, technology, proficiency }) => {
   return (
     <div className="experience_details">
       <Icon className="experience__details-icon" />
@@ -9,9 +10,9 @@ const TechCheckMark = ({ icon: Icon, technology, proficiency }) => {
       <small className="text-light">{proficiency}</small>
     </div>
   );
-};
+});
 
-const DomainCard = ({ domain }) => {
+const DomainCard = memo(({ domain }) => {
   return (
     <div className="experience__frontend">
       <h3>{domain.domainID}</h3>
@@ -22,7 +23,7 @@ const DomainCard = ({ domain }) => {
       </div>
     </div>
   );
-};
+});
 
 const Experience = () => {
   return (
