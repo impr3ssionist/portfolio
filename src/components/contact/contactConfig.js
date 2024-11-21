@@ -35,7 +35,7 @@ const contactData = {
       name: "Messenger",
       subTitle: "Find me on Facebook!",
       linkText: "Send a message",
-      href: "https://m.me/caleb.p.ford.1",
+      href: "https://www.facebook.com/caleb.p.ford.1",
       target: "_blank",
       rel: "noopener noreferrer",
     },
