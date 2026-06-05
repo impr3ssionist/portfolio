@@ -16,6 +16,20 @@
     
 }
 
+.portfolio__item h3 {
+    margin: 1.2rem 0 .35rem;
+}
+
+.portfolio__item small {
+    color: var(--color-primary);
+}
+
+.portfolio__item p {
+    color: var(--color-light);
+    margin-top: .8rem;
+    font-size: .9rem;
+}
+
 .portfolio__item:hover {
     border-color: var(--color-primary-variant);
     background: transparent;
@@ -37,7 +51,208 @@
     margin-bottom: 1rem;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
 
+}
+
+.portfolio__case-study {
+    margin-top: 4rem;
+    background: var(--color-bg-variant);
+    border: 1px solid transparent;
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
+.portfolio__case-study:hover {
+    border-color: var(--color-primary-variant);
+}
+
+.portfolio__case-hero {
+    display: grid;
+    grid-template-columns: 1.05fr .95fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.portfolio__eyebrow {
+    color: var(--color-primary);
+    font-size: .95rem;
+    margin-bottom: .5rem;
+}
+
+.portfolio__case-hero h3 {
+    font-size: 2rem;
+    margin-bottom: .8rem;
+}
+
+.portfolio__case-hero p,
+.portfolio__case-section p,
+.portfolio__snapshot p {
+    color: var(--color-light);
+}
+
+.portfolio__role {
+    margin-top: 1rem;
+}
+
+.portfolio__role strong {
+    color: var(--color-white);
+    font-weight: 500;
+}
+
+.portfolio__case-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.portfolio__mockup {
+    background: var(--color-bg);
+    border: 1px solid var(--color-primary-variant);
+    border-radius: 1.4rem;
+    padding: 1rem;
+    box-shadow: 0 1.2rem 2rem rgba(0,0,0,.25);
+}
+
+.portfolio__mockup-topbar {
+    display: flex;
+    gap: .35rem;
+    margin-bottom: 1rem;
+}
+
+.portfolio__mockup-topbar span {
+    width: .65rem;
+    height: .65rem;
+    border-radius: 50%;
+    background: var(--color-primary);
+}
+
+.portfolio__mockup-header,
+.portfolio__mockup-stats,
+.portfolio__mockup-table div {
+    display: grid;
+    gap: .75rem;
+}
+
+.portfolio__mockup-header {
+    grid-template-columns: 1fr auto;
+    align-items: start;
+    margin-bottom: 1rem;
+}
+
+.portfolio__mockup-header small {
+    color: var(--color-light);
+}
+
+.portfolio__mockup-header button {
+    background: var(--color-primary);
+    color: var(--color-bg);
+    border-radius: .4rem;
+    padding: .45rem .7rem;
+    font: inherit;
+}
+
+.portfolio__mockup-stats {
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 1rem;
+}
+
+.portfolio__mockup-stats span,
+.portfolio__mockup-table div {
+    background: rgba(255,255,255,.06);
+    border-radius: .7rem;
+    padding: .75rem;
+    color: var(--color-light);
+}
+
+.portfolio__mockup-stats span {
+    color: var(--color-white);
+    text-align: center;
+}
+
+.portfolio__mockup-table {
+    display: grid;
+    gap: .55rem;
+    font-size: .82rem;
+}
+
+.portfolio__mockup-table div {
+    grid-template-columns: 1.2fr .8fr 1fr;
+}
+
+.portfolio__mockup-table div:first-child {
+    color: var(--color-primary);
+}
+
+.portfolio__badges,
+.portfolio__highlights div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .7rem;
+}
+
+.portfolio__badges {
+    margin-top: 2rem;
+}
+
+.portfolio__badges span,
+.portfolio__highlights span {
+    border: 1px solid var(--color-primary-variant);
+    border-radius: 999px;
+    color: var(--color-light);
+    padding: .35rem .75rem;
+    font-size: .85rem;
+}
+
+.portfolio__snapshot {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.portfolio__snapshot div,
+.portfolio__case-section,
+.portfolio__highlights {
+    background: rgba(31,31,56,.55);
+    border-radius: 1.2rem;
+    padding: 1.2rem;
+}
+
+.portfolio__snapshot small {
+    color: var(--color-primary);
+}
+
+.portfolio__case-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.portfolio__case-section {
+    margin-top: 0;
+}
+
+.portfolio__case-section h4,
+.portfolio__highlights h4 {
+    color: var(--color-primary);
+    margin-bottom: .6rem;
+}
+
+.portfolio__case-section ul {
+    margin-top: .8rem;
+}
+
+.portfolio__case-section li {
+    color: var(--color-light);
+    list-style: disc;
+    margin-left: 1.2rem;
+}
+
+.portfolio__highlights {
+    margin-top: 1rem;
 }
 
 /* ==================== Media Queries (Medium Devices) ========================*/
@@ -46,6 +261,15 @@
     .portfolio__container {
         grid-template-columns: 1fr 1fr;
         gap:1.2rem;
+    }
+
+    .portfolio__case-hero,
+    .portfolio__case-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio__snapshot {
+        grid-template-columns: 1fr 1fr;
     }
 
 }
@@ -57,5 +281,26 @@
         grid-template-columns: 1fr;
         gap: 1rem;
     
+    }
+
+    .portfolio__case-study {
+        padding: 1rem;
+    }
+
+    .portfolio__case-hero h3 {
+        font-size: 1.55rem;
+    }
+
+    .portfolio__snapshot,
+    .portfolio__mockup-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio__mockup-table {
+        font-size: .75rem;
+    }
+
+    .portfolio__mockup-table div {
+        grid-template-columns: 1fr;
     }
 }

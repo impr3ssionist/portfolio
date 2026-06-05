@@ -2,11 +2,11 @@ import { BsFacebook, BsLinkedin, BsGithub } from "react-icons/bs";
 
 const footerData = {
   footerLinks: [
-    { id: "home", href: "#", text: "Home" },
+    { id: "home", href: "#home", text: "Home" },
     { id: "about", href: "#about", text: "About" },
     { id: "experience", href: "#experience", text: "Experience" },
     { id: "portfolio", href: "#portfolio", text: "Portfolio" },
-    { id: "contact", href: "#Contact", text: "Contact" },
+    { id: "contact", href: "#contact", text: "Contact" },
   ],
 
   footerSocials: [

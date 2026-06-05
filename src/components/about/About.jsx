@@ -74,7 +74,7 @@ const About = () => {
             ))}
 
             <div className="about__button">
-              <a href="#Contact" className="btn btn-primary">
+              <a href="#contact" className="btn btn-primary">
                 <p>Let's Talk!</p>
               </a>
             </div>

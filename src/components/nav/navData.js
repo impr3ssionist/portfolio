@@ -1,4 +1,4 @@
-import { FaHome } from "react-icons/fa";
+import { FaBriefcase, FaHome } from "react-icons/fa";
 import { SiAboutdotme } from "react-icons/si";
 import { BiBookReader, BiMessageAltDetail } from "react-icons/bi";
 
@@ -6,7 +6,7 @@ const navData = {
   navLinks: [
     {
       id: "home",
-      href: "#",
+      href: "#home",
       icon: FaHome,
     },
     {
@@ -18,6 +18,11 @@ const navData = {
       id: "experience",
       href: "#experience",
       icon: BiBookReader,
+    },
+    {
+      id: "portfolio",
+      href: "#portfolio",
+      icon: FaBriefcase,
     },
     {
       id: "contact",
